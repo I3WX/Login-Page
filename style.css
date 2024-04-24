@@ -1,0 +1,94 @@
+:root {
+    --dark_blue: #0F2167;
+    --white: #ffffff;
+    --light-blue: #4CB9E7;
+    --device-width: 100vw;
+    --device-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark_blue);
+    min-width: 600px;
+    width: var(--device-width);
+    height: var(--device-height);
+    display: flex;
+    justify-content: end;
+}
+
+#leftSide {
+    background: var(--dark_blue);
+    width: calc(var(--device-width) * 0.33); 
+    height: var(--device-height);
+}
+#leftHedding{
+    display: flex;
+    height: calc(var(--device-height)*0.40);
+    flex-direction: column;
+}
+#companyName{
+    height: 45%;
+    font-size: 6.5em;
+    width: 170%;
+    position: relative;
+    word-spacing: 15px;
+    color: var(--light-blue) ;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+#quort{
+    padding-top: 12px;
+    color: var(--light-blue) ;
+    height: 55%;
+    font-size: 2em;
+    width: 100%;
+    padding-left: 25px;
+    font-weight: bold;
+}
+#IMG{
+    height: calc(var(--device-height)*0.60);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#socialMediaLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    padding-bottom: 17px;
+}
+.logo {
+    margin: 10px 0px 10px 0px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+#diverImg{
+    position: relative;
+    width: 70%;
+    height: calc(var(--device-height)*0.57);
+    justify-self: end;
+    border-radius: 15px;
+}
+#DiverIMG{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;   
+}
+
+
+#rightSide {
+    background-color: var(--white);
+    width: calc(var(--device-width) * 0.66);
+    height: var(--device-height);
+    border-radius: 15px 0 0 15px;
+}
