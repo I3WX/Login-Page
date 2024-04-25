@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="leftSide">
@@ -35,23 +36,39 @@
             <form>
                 <div id="name">
                     <div id="firstName">
-                        <label for="firstName"></label>
                         <input class="textinput" type="text" name="firstName" placeholder="First Name">
                     </div>
                     <div id="lastName">
-                        <label for="lastName"></label>
                         <input class="textinput" type="text" name="lastName" placeholder="Last Name">
                     </div>
                 </div>
                 <div id="email">
-                    <label for="Email"></label>
                     <input type="email" name="Email" id="Email" placeholder="Email">
                 </div>
                 <div id="password">
-                    <label for="Password"></label>
-                    <input type="password" name="Password" id="Password" placeholder="Email">
+                    <input type="password" name="Password" id="Password" placeholder="Password">
+                </div>
+                <div id="createAccountBtn">
+                    <button id="createAccount">CREATE ACCOUNT</button>
                 </div>
             </form>
+            <div id="lineORline">
+                <div class="line"></div>
+                <div class="or">or</div>
+                <div class="line"></div>
+            </div>
+            <div id="loginBtn">
+                <div id="loginFacebook">
+                    <button id="loginFacebookBtn">LOGIN WITH 
+                            <img class="logoBtn" id="facebooklogo" src="image/logo/facebook-2-logo-svgrepo-com.svg" alt="facebook">
+                    </button>
+                </div>
+                <div id="loginGoogle">
+                    <button id="loginGoogleBtn">LOGIN WITH 
+                            <img class="logoBtn" id="googlelogo" src="image/logo/7123025_logo_google_g_icon.svg" alt="Google">
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 

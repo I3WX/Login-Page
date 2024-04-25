@@ -2,6 +2,8 @@
     --dark_blue: #0F2167;
     --white: #ffffff;
     --light-blue: #4CB9E7;
+    --light-grey: #D3D3D3;
+    --Bright-blue: #3559E0 ;
     --device-width: 100vw;
     --device-height: 100vh;
 }
@@ -34,7 +36,7 @@ body {
 }
 #companyName{
     height: 45%;
-    font-size: 6.5em;
+    font-size: 5.7em;
     width: 170%;
     position: relative;
     word-spacing: 15px;
@@ -44,13 +46,13 @@ body {
     font-weight: bold;
 }
 #quort{
+    font-family: 'Roboto', sans-serif;
     padding-top: 12px;
     color: var(--light-blue) ;
     height: 55%;
     font-size: 2em;
     width: 100%;
     padding-left: 25px;
-    font-weight: bold;
 }
 #IMG{
     height: calc(var(--device-height)*0.60);
@@ -62,7 +64,7 @@ body {
 #socialMediaLogo{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:end ;
     height: 100%;
     padding-bottom: 17px;
 }
@@ -71,10 +73,13 @@ body {
     width: 30px;
     height: 30px;
     color: #ffffff;
+    display: flex;
+    justify-self: end;
 }
 #diverImg{
     position: relative;
-    width: 70%;
+    left: 30%;
+    width: 60%;
     height: calc(var(--device-height)*0.57);
     justify-self: end;
     border-radius: 15px;
@@ -91,4 +96,100 @@ body {
     width: calc(var(--device-width) * 0.66);
     height: var(--device-height);
     border-radius: 15px 0 0 15px;
+}
+
+#rightHedding{
+ padding: 200px 200px 00px 350px; 
+ font-size: 3em;
+ color: var(--light-blue);
+ font-weight: bold;
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+.textinput{
+    border: solid 3px var(--light-grey) ;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    margin: 20px 30px;
+}
+#email , #password{
+    display: flex;
+    justify-content: center;
+}
+#Email ,#Password{
+    border: solid 3px var(--light-grey) ;
+    border-radius: 5px;
+    height: 30px;
+    width: 660px;
+}
+#Password{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#createAccountBtn{
+    border-radius: solid 10px #000;
+    padding-left: 178px;
+}
+#createAccount{
+    height: 35px;
+    width: 300px;
+    background-color: var(--Bright-blue);
+    color: var(--white);
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#lineORline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.line {
+    height: 1px;
+    width: 33%;
+    background-color: var(--light-grey);
+}
+
+.or {
+    padding: 0 10px;
+}
+#loginBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0px;
+}
+#loginFacebookBtn, #loginGoogleBtn {
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    margin: 20px 30px;
+    background-color: var(--Bright-blue);
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    border: 0px;
+}
+
+.logoBtn{
+    height: 30px;
+    width: 30px;
+}
+#facebooklogo{
+    height: 25px;
+}
+
+#companyName,
+#rightHedding {
+    font-family: 'Aquino', sans-serif; 
 }
